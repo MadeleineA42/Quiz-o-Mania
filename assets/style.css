@@ -18,13 +18,18 @@ body    {
 }
 
 .main-box h1  {
-    font-size: 25px;
-    color: black;
-    font-weight: 600px;
+    font-size: 40px;
+    color: #f374ae;
+    font-weight: 600;
     border-bottom: 1px solid black;
     padding-bottom: 30 px;
 }
 
 .quiz   {
-    padding: 20px 0;
+    padding: 40px 0;
+}
+
+.quiz h2{
+    font-size: 25px;
+    color: #f374ae;
 }
