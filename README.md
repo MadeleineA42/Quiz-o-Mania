@@ -10,3 +10,6 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+
+<img src="assets/images/Screen Shot 2023-07-23 at 12.33.29 PM.png">
+<img src="assets/images/Screen Shot 2023-07-23 at 12.34.09 PM.png">
