@@ -17,3 +17,10 @@ body    {
     padding: 30px;
 }
 
+.main-box h1  {
+    font-weight: 25px;
+    color: black;
+    font-weight: 600px;
+    border-bottom: 1px solid black;
+    padding-bottom: 30 px;
+}
