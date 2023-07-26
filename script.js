@@ -12,3 +12,16 @@ function setTime()  {
 
     }, 1000);
 }
+
+const questions = [
+    {
+        question: "Commonly used data strings DO NOT include ___.",
+        answers: [
+            {text: "strings", correct: false},
+            {text: "booleans", correct: false},
+            {text: "alerts", correct: true},
+            {text: "numbers", correct: false},
+        ]
+    },
+    
+]
