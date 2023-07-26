@@ -32,4 +32,13 @@ const questions = [
             {text: "parenthesis", correct: false},
         ] 
       },
+      {
+        question: "Arrays in JavaScript can be used to store ___.",
+        answers: [
+            {text: "numbers and strings", correct: false},
+            {text: "other arrays", correct: false},
+            {text: "booleans", correct: false},
+            {text: "all of the above", correct: true},
+        ] 
+      },
 ]
