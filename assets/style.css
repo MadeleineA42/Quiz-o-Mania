@@ -28,7 +28,7 @@ body    {
 .quiz   {
     padding: 40px 0;
 }
-.start  {
+#start  {
     background-color: #E1E0E4;
     color: #e42633; 
     font-size:40px;
