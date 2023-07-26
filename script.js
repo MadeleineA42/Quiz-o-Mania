@@ -48,7 +48,9 @@ const questions = [
 
 const question = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
+const startButton = document.getElementById("start")
 
 let currentQuestionIndex = 0;
 let timeRemaining = 75;
 let timerInterval;
+
