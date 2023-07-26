@@ -23,5 +23,13 @@ const questions = [
             {text: "numbers", correct: false},
         ]
     },
-    
+    {
+        question: "Sting values must be enclosed within ___ when being assigned variables",
+        answers: [
+            {text: "commas", correct: false},
+            {text: "curly brackets", correct: false},
+            {text: "quotes", correct: true},
+            {text: "parenthesis", correct: false},
+        ] 
+      },
 ]
