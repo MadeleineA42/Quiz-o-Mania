@@ -28,7 +28,17 @@ body    {
 .quiz   {
     padding: 40px 0;
 }
-
+.start  {
+    background-color: #E1E0E4;
+    color: #e42633; 
+    font-size:40px;
+    font-weight: 700;
+    width: 100%;
+    border: 3px solid #32533d;
+    padding: 1%;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
 .quiz h2{
     font-size: 30px;
     color: #f374ae;
