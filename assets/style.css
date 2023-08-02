@@ -27,6 +27,12 @@ body    {
 
 .quiz   {
     padding: 40px 0;
+    background: #E1E0E4;
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto 0;
+    border: 20px;
+    padding: 30px;
 }
 #start  {
     background-color: #E1E0E4;
