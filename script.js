@@ -1,3 +1,12 @@
+const question = document.getElementById("question");
+const answerButton = document.getElementById("answer-buttons");
+const startButton = document.getElementById("start")
+
+let currentQuestionIndex = 0;
+let timeRemaining = 75;
+let timerInterval;
+
+
 const questions = [
     {
         question: "Commonly used data strings DO NOT include ___.",
@@ -46,11 +55,7 @@ const questions = [
       }
 ];
 
-const question = document.getElementById("question");
-const answerButton = document.getElementById("answer-buttons");
-const startButton = document.getElementById("start")
 
-let currentQuestionIndex = 0;
-let timeRemaining = 75;
-let timerInterval;
+
+
 
