@@ -1,10 +1,29 @@
-const question = document.getElementById("question");
-const answerButton = document.getElementById("answer-buttons");
-const startButton = document.getElementById("start")
+const startScreen = document.querySelector('.main-box');
+const startButton = document.querySelector('#start');
+const question = document.querySelector('#question');
+const answerButton = document.querySelector('#answer-buttons');
 
-let currentQuestionIndex = 0;
+
+let questionIndex = 0;
 let timeRemaining = 75;
-let timerInterval;
+let score = 0;
+
+function startQuiz()  {
+  // document.querySelector('#start').setAttribute('style' , 'display: none');
+  startScreen.innerHTML = ``;
+} 
+startQuiz()
+
+
+
+
+
+
+
+
+
+
+
 
 
 const questions = [
