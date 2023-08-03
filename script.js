@@ -12,6 +12,14 @@ let score = 0;
 //starts the q's
 function startQuiz() {
   startScreen.innerHTML = ``;
+  startScreen.innerHTML += `
+  <h2 id="question">${questions[0].question}</h2>
+  <div id="answer-buttons">
+  <button class="button">${questions[0].answers[0].text}</button>
+  <button class="button">Answer #2</button>
+  <button class="button">Answer #3</button>
+  <button class="button">Answer #4</button>
+</div> `
   timeRemaining();
   showQuestion();
 }
