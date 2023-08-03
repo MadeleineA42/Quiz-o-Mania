@@ -9,20 +9,11 @@ let timeRemaining = 75;
 let score = 0;
 
 function startQuiz()  {
-  // document.querySelector('#start').setAttribute('style' , 'display: none');
   startScreen.innerHTML = ``;
+  timeRemaining();
+  showQuestion();
 } 
-startQuiz()
-
-
-
-
-
-
-
-
-
-
+// startQuiz()
 
 
 
@@ -75,6 +66,6 @@ const questions = [
 ];
 
 
-
+startButton.addEventListener('click', startQuiz);
 
 
