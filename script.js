@@ -11,6 +11,7 @@ let score = 0;
 
 //starts the q's
 function startQuiz() {
+  console.log('The quiz has begun!');
   startScreen.innerHTML = ``;
   startScreen.innerHTML += `
   <h2 id="question">${questions[0].question}</h2>
@@ -23,7 +24,15 @@ function startQuiz() {
   timeRemaining();
   showQuestion();
 }
-
+//this will create a question cycle
+function showQuestions()  {
+  if (questionIndex >= question.length);
+  //ends when out of questions
+  return;
+}
+// this is the start of a for loop 
+// for(const i = 0; i < questions[0].answers.length; i++)  {
+// }
 
 
 //these are the quiz q's
