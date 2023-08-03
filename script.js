@@ -16,9 +16,9 @@ function startQuiz() {
   <h2 id="question">${questions[0].question}</h2>
   <div id="answer-buttons">
   <button class="button">${questions[0].answers[0].text}</button>
-  <button class="button">Answer #2</button>
-  <button class="button">Answer #3</button>
-  <button class="button">Answer #4</button>
+  <button class="button">${questions[1].answers[1].text}</button>
+  <button class="button">${questions[2].answers[2].text}</button>
+  <button class="button">${questions[3].answers[3].text}</button>
 </div> `
   timeRemaining();
   showQuestion();
