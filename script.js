@@ -25,14 +25,11 @@ function startQuiz() {
   showQuestion();
 }
 //this will create a question cycle
-function showQuestions()  {
-  if (questionIndex >= question.length);
+function showNextQuestion()  {
+  if (questionIndex < questions.length);
   //ends when out of questions
-  return;
+
 }
-// this is the start of a for loop 
-// for(const i = 0; i < questions[0].answers.length; i++)  {
-// }
 
 
 //these are the quiz q's
