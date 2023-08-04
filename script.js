@@ -8,8 +8,24 @@ const answerButton = document.querySelector('#answer-buttons');
 let questionIndex = 0;
 let timeRemaining = 75;
 let score = 0;
+let timerInterval;
 
 //starts the q's
+
+//this will create a question cycle and ends when out of questions
+function showNextQuestion() {
+  if (questionIndex < questions.length) {
+    question.innerHTML = '';
+    for (const answer of questions[questionIndex].answers) {
+      answerButton.innerHTML += `<button class="button">${answer.text}</button>`;
+    }
+    questionIndex++;
+  } else {
+    clearInterval(timerInterval);
+    showResult();
+  }
+}
+
 function startQuiz() {
   console.log('The quiz has begun!');
   startScreen.innerHTML = ``;
@@ -24,12 +40,15 @@ function startQuiz() {
   timeRemaining();
   showQuestion();
 }
-//this will create a question cycle
-function showNextQuestion()  {
-  if (questionIndex < questions.length);
-  //ends when out of questions
 
-}
+
+
+
+
+
+
+
+
 
 
 //these are the quiz q's
