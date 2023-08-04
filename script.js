@@ -86,8 +86,6 @@ function startQuiz() {
   <button class="button">${questions[2].answers[2].text}</button>
   <button class="button">${questions[3].answers[3].text}</button>
 </div> `
-  timeRemaining();
-  showQuestion();
 }
 
 //event listener to start quiz
