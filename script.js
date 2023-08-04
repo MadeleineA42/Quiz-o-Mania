@@ -10,47 +10,6 @@ let timeRemaining = 75;
 let score = 0;
 let timerInterval;
 
-//starts the q's
-
-//this will create a question cycle and ends when out of questions
-function showNextQuestion() {
-  if (questionIndex < questions.length) {
-    question.innerHTML = '';
-    for (const answer of questions[questionIndex].answers) {
-      answerButton.innerHTML += `<button class="button">${answer.text}</button>`;
-    }
-    questionIndex++;
-  } else {
-    clearInterval(timerInterval);
-    showResult();
-  }
-}
-
-function startQuiz() {
-  console.log('The quiz has begun!');
-  startScreen.innerHTML = ``;
-  startScreen.innerHTML += `
-  <h2 id="question">${questions[0].question}</h2>
-  <div id="answer-buttons">
-  <button class="button">${questions[0].answers[0].text}</button>
-  <button class="button">${questions[1].answers[1].text}</button>
-  <button class="button">${questions[2].answers[2].text}</button>
-  <button class="button">${questions[3].answers[3].text}</button>
-</div> `
-  timeRemaining();
-  showQuestion();
-}
-
-
-
-
-
-
-
-
-
-
-
 //these are the quiz q's
 const questions = [
   {
@@ -99,6 +58,37 @@ const questions = [
     ]
   }
 ];
+
+//starts the q's
+
+//this will create a question cycle and ends when out of questions
+function showNextQuestion() {
+  if (questionIndex < questions.length) {
+    question.innerHTML = '';
+    for (const answer of questions[questionIndex].answers) {
+      answerButton.innerHTML += `<button class="button">${answer.text}</button>`;
+    }
+    questionIndex++;
+  } else {
+    clearInterval(timerInterval);
+    showResult();
+  }
+}
+
+function startQuiz() {
+  console.log('The quiz has begun!');
+  startScreen.innerHTML = ``;
+  startScreen.innerHTML += `
+  <h2 id="question">${questions[0].question}</h2>
+  <div id="answer-buttons">
+  <button class="button">${questions[0].answers[0].text}</button>
+  <button class="button">${questions[1].answers[1].text}</button>
+  <button class="button">${questions[2].answers[2].text}</button>
+  <button class="button">${questions[3].answers[3].text}</button>
+</div> `
+  timeRemaining();
+  showQuestion();
+}
 
 //event listener to start quiz
 startButton.addEventListener('click', startQuiz);
